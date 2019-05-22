@@ -1,0 +1,47 @@
+archivos * binarios (codigo maquina /binarios ) estructura. 
+	*texto plano. 
+ *fopen(char *nombre,char *modo);
+
+int fclose(FILE *fp);
+
+int fcloseall(void);
+
+int fread(void *memoria,int num,int cont,FILE *fp);
+int fwrite(void *memoria,int num,int cont,FILE *fp);
+
+int feof(FILE *f); F DE FILE SE LLEGO O NO AL FINAL DEL ARCHIVO CUANDO LO RECORRO,
+
+int ferror(FILE *fp);ME AVISA DE UN ERROR 
+
+void rewind(FILE *fp); ME SIRVE PARA REBOBINAR EL ARCHIVO VUELVE EL ARCHIVO AL INCIO P
+
+int fseek(FILE *fp,long num,int origen); ME PARMITE MOVERME TANTOS BYTES Q POSEE EL ARCHIVO 
+
+long ftell(FILE *f);VOY A OBTENER LA CANTIDAD DE BYTES Q  OCUPA PARTE O TOTAL DE UN ARCHIVO LO Q PESA EL ARCHIVO  
+
+int getc(FILE *fp); ESCRIBE LOS ARCHIVOS POR TECLADO 
+
+int putc(int ch,FILE *fp);PRINTF 
+
+char* fgets(char *str,int n,FILE *fp);
+
+int fputs(const char *str,FILE *fp);
+int fscanf(FILE *fp,const char *formato[,dirección,...]);TOMA EL DATO DEL  TECLADO Y SE LA ASIGNA A UN ARCHIVO 
+int fprintf(FILE *fp,const char *formato[,argumento,...]);IMPRIMIMOS EN PANTALLA UN ARCHIVO DE TIPO TEXTO 	
+
+
+
+
+
+
+ILE * fopen (const char *Nombre_de_archivo , const char *Modo)
+
+
+
+
+
+int fwrite ( void * origen , size_t tamaño(TAMAÑO EN BYTES Q  QUIERO ESCRIBIR  , size_t cantidad CANTIDAD DE DATOS Q VA A ESCRIBIR  , FILE *arch );
+
+
+
+while(!feof(bin))  esto es igual while (feof (bin) ==O );
